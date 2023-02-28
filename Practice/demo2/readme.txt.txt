@@ -1,0 +1,1 @@
+This spring applicaiton is basic application that have two class, that implements creating beans using Field Injection
