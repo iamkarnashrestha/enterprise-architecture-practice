@@ -9,7 +9,7 @@ import org.springframework.util.StopWatch;
 @Configuration
 public class StopWatchAdvice {
     @Around("execution(* bank.service.*.*(..))")
-    public Object getRunTime(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+    public Object methodTimer(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         StopWatch sw=new StopWatch();
         sw.start(proceedingJoinPoint.getSignature().getName());
         Object retVal=proceedingJoinPoint.proceed();

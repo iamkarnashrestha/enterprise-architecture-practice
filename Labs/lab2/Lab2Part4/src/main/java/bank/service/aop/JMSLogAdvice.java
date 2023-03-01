@@ -14,7 +14,7 @@ public class JMSLogAdvice {
     Logger logger;
 
     @After("execution(* bank.jms.JMSSender.*(..)) && args(message)")
-    public void logMessage(JoinPoint jp,String message){
+    public void logJMSMessage(JoinPoint jp,String message){
         logger.log("JMS Logging "+ message);
 
     }

@@ -13,7 +13,7 @@ public class DAOLogAdvice {
     @Autowired
     Logger logger;
     @Before("execution(* bank.dao.*.*(..))")
-    public void invoke(JoinPoint jp){
+    public void logDAOCall(JoinPoint jp){
         logger.log("DAO Logging method "+jp.getSignature().getName());
 
     }
