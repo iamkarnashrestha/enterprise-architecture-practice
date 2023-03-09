@@ -1,0 +1,8 @@
+Scenario: We have one to Many relation with Account and AccountEntry, when we fetch account the
+AccountEntry will be fetched lazily. To print Account along with AccountEntry we did fetch tye
+Eager for AccountEntry.
+
+When we make all the methods of AccountService Transactional, we do not need to fetch the AccountEntry eagerly,
+because the method getAccounts becomes Transactional, and the fetching of Account and AccountEntry is going to
+happen on the same transaction, when the transaction get committed, the Account and list of AccountEntry both will
+get fetched.
