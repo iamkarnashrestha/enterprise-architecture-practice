@@ -1,0 +1,9 @@
+Using Hsql database with JPA repository: 
+
+Total time to insert 10000 person records: 89085 ms
+Total time to retrive 10000 person records: 244 ms
+
+
+Using MongoDb database with MongoRepository
+Total time to insert 10000 person records: 4039 ms
+Total time to retrive 10000 person records: 2369 ms
