@@ -1,0 +1,10 @@
+For the bank application we need to write test cases for every methods that  fulfill the functional requirements,
+such as creating account, depositing amount, transferng funds, withdraw amount etc.
+For that we need to create a test suite class which contain test cases of each function by considering most of the edge cases.For example;Testing business
+logic present in the Account service with all possible edge cases
+Creating an account
+Deposit
+Withdraw
+Transfer Funds
+Testing repository layer by using a test database and assert the results.
+we need to test the utility classes other domain class which are present in the integration layer.

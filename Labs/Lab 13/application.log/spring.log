@@ -1,0 +1,253 @@
+2023-03-15 15:27:22.586  INFO 3332 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 3332 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 15:27:22.589  INFO 3332 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 15:27:23.491  INFO 3332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 15:27:23.569  INFO 3332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2023-03-15 15:27:24.383  INFO 3332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 15:27:24.394  INFO 3332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 15:27:24.395  INFO 3332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 15:27:24.499  INFO 3332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 15:27:24.500  INFO 3332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1643 ms
+2023-03-15 15:27:24.742  INFO 3332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 15:27:24.804  INFO 3332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 15:27:24.967  INFO 3332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 15:27:25.085  INFO 3332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 15:27:25.090  WARN 3332 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 15:27:25.249  INFO 3332 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 15:27:25.260  INFO 3332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 15:27:25.276  INFO 3332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 15:27:26.042  INFO 3332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 15:27:26.054  INFO 3332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:27:26.635  WARN 3332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:27:27.344  INFO 3332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 15:27:27.368  INFO 3332 --- [main] bank.Application                         : Started Application in 5.331 seconds (JVM running for 6.483)
+2023-03-15 15:27:27.466  INFO 3332 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 1263862 , customerName= Frank Brown
+2023-03-15 15:27:27.489  INFO 3332 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 4253892 , customerName= John Doe
+2023-03-15 15:27:27.521  INFO 3332 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 240.0
+2023-03-15 15:27:27.549  INFO 3332 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 529.0
+2023-03-15 15:27:27.567  INFO 3332 --- [main] bank.service.AccountService              : withdrawEuros with parameters accountNumber= 1263862 , amount= 230.0
+2023-03-15 15:27:27.582  INFO 3332 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 4253892 , amount= 1240.0
+2023-03-15 15:27:27.595  INFO 3332 --- [main] bank.service.AccountService              : depositEuros with parameters accountNumber= 4253892 , amount= 12000.0
+2023-03-15 15:27:27.824  INFO 3332 --- [main] BankLogger                               : JMS Logging Deposit of  12000.0 euros to account with accountNumber= 4253892 made
+2023-03-15 15:27:27.842  INFO 3332 --- [main] bank.service.AccountService              : transferFunds with parameters fromAccountNumber= 4253892 , toAccountNumber= 1263862 , amount= 100.0 , description= payment of invoice 10232
+2023-03-15 15:34:13.869  INFO 3332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 15:34:13.869  INFO 3332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 15:34:13.870  INFO 3332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-15 15:53:55.924  INFO 3332 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:53:55.928  INFO 3332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 15:53:55.936  INFO 3332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 15:54:06.909  INFO 15496 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 15496 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 15:54:06.913  INFO 15496 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 15:54:08.330  INFO 15496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 15:54:08.415  INFO 15496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2023-03-15 15:54:09.256  INFO 15496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 15:54:09.272  INFO 15496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 15:54:09.273  INFO 15496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 15:54:09.405  INFO 15496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 15:54:09.405  INFO 15496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2185 ms
+2023-03-15 15:54:09.840  INFO 15496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 15:54:09.948  INFO 15496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 15:54:10.186  INFO 15496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 15:54:10.322  INFO 15496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 15:54:10.326  WARN 15496 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 15:54:10.500  INFO 15496 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 15:54:10.513  INFO 15496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 15:54:10.537  INFO 15496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 15:54:11.462  INFO 15496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 15:54:11.474  INFO 15496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:54:12.101  WARN 15496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:54:13.067  INFO 15496 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-03-15 15:54:13.182  INFO 15496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 15:54:13.203  INFO 15496 --- [main] bank.Application                         : Started Application in 6.77 seconds (JVM running for 7.788)
+2023-03-15 15:54:13.321  INFO 15496 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 1263862 , customerName= Frank Brown
+2023-03-15 15:54:13.350  INFO 15496 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 4253892 , customerName= John Doe
+2023-03-15 15:54:13.391  INFO 15496 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 240.0
+2023-03-15 15:54:13.418  INFO 15496 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 529.0
+2023-03-15 15:54:13.443  INFO 15496 --- [main] bank.service.AccountService              : withdrawEuros with parameters accountNumber= 1263862 , amount= 230.0
+2023-03-15 15:54:13.455  INFO 15496 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 4253892 , amount= 1240.0
+2023-03-15 15:54:13.465  INFO 15496 --- [main] bank.service.AccountService              : depositEuros with parameters accountNumber= 4253892 , amount= 12000.0
+2023-03-15 15:54:13.704  INFO 15496 --- [main] BankLogger                               : JMS Logging Deposit of  12000.0 euros to account with accountNumber= 4253892 made
+2023-03-15 15:54:13.724  INFO 15496 --- [main] bank.service.AccountService              : transferFunds with parameters fromAccountNumber= 4253892 , toAccountNumber= 1263862 , amount= 100.0 , description= payment of invoice 10232
+2023-03-15 15:54:14.238  INFO 15496 --- [RMI TCP Connection(1)-10.10.61.202] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 15:54:14.239  INFO 15496 --- [RMI TCP Connection(1)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 15:54:14.241  INFO 15496 --- [RMI TCP Connection(1)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-15 16:04:35.024  INFO 15496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:04:35.027  INFO 15496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:04:35.035  INFO 15496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 16:04:39.801  INFO 11948 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 11948 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 16:04:39.805  INFO 11948 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 16:04:41.151  INFO 11948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 16:04:41.231  INFO 11948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2023-03-15 16:04:42.053  INFO 11948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 16:04:42.066  INFO 11948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 16:04:42.067  INFO 11948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 16:04:42.205  INFO 11948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 16:04:42.206  INFO 11948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
+2023-03-15 16:04:42.618  INFO 11948 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 16:04:42.725  INFO 11948 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 16:04:42.947  INFO 11948 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 16:04:43.081  INFO 11948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 16:04:43.086  WARN 11948 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 16:04:43.249  INFO 11948 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 16:04:43.263  INFO 11948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 16:04:43.286  INFO 11948 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 16:04:44.216  INFO 11948 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 16:04:44.227  INFO 11948 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:04:44.809  WARN 11948 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 16:04:45.668  INFO 11948 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-15 16:04:45.778  INFO 11948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 16:04:45.797  INFO 11948 --- [main] bank.Application                         : Started Application in 6.573 seconds (JVM running for 7.728)
+2023-03-15 16:04:45.888  INFO 11948 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:04:45.890  INFO 11948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:04:45.900  INFO 11948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 16:04:49.930  INFO 1852 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 1852 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 16:04:49.934  INFO 1852 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 16:04:51.053  INFO 1852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 16:04:51.144  INFO 1852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2023-03-15 16:04:51.890  INFO 1852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 16:04:51.900  INFO 1852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 16:04:51.900  INFO 1852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 16:04:52.003  INFO 1852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 16:04:52.003  INFO 1852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1785 ms
+2023-03-15 16:04:52.400  INFO 1852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 16:04:52.468  INFO 1852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 16:04:52.609  INFO 1852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 16:04:52.725  INFO 1852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 16:04:52.729  WARN 1852 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 16:04:52.893  INFO 1852 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 16:04:52.905  INFO 1852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 16:04:52.920  INFO 1852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 16:04:53.621  INFO 1852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 16:04:53.631  INFO 1852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:04:54.193  WARN 1852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 16:04:54.994  INFO 1852 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-15 16:04:55.087  INFO 1852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 16:04:55.104  INFO 1852 --- [main] bank.Application                         : Started Application in 5.664 seconds (JVM running for 6.604)
+2023-03-15 16:04:55.200  INFO 1852 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 1263862 , customerName= Frank Brown
+2023-03-15 16:04:55.235  INFO 1852 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 4253892 , customerName= John Doe
+2023-03-15 16:04:55.271  INFO 1852 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 240.0
+2023-03-15 16:04:55.304  INFO 1852 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 529.0
+2023-03-15 16:04:55.323  INFO 1852 --- [main] bank.service.AccountService              : withdrawEuros with parameters accountNumber= 1263862 , amount= 230.0
+2023-03-15 16:04:55.334  INFO 1852 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 4253892 , amount= 1240.0
+2023-03-15 16:04:55.343  INFO 1852 --- [main] bank.service.AccountService              : depositEuros with parameters accountNumber= 4253892 , amount= 12000.0
+2023-03-15 16:04:55.564  INFO 1852 --- [main] BankLogger                               : JMS Logging Deposit of  12000.0 euros to account with accountNumber= 4253892 made
+2023-03-15 16:04:55.581  INFO 1852 --- [main] bank.service.AccountService              : transferFunds with parameters fromAccountNumber= 4253892 , toAccountNumber= 1263862 , amount= 100.0 , description= payment of invoice 10232
+2023-03-15 16:04:55.769  INFO 1852 --- [RMI TCP Connection(2)-10.10.61.202] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 16:04:55.769  INFO 1852 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 16:04:55.771  INFO 1852 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-15 16:05:29.094  INFO 1852 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:05:29.098  INFO 1852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:05:29.103  INFO 1852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 16:05:33.006  INFO 17276 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 17276 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 16:05:33.010  INFO 17276 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 16:05:34.250  INFO 17276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 16:05:34.320  INFO 17276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2023-03-15 16:05:35.096  INFO 17276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 16:05:35.108  INFO 17276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 16:05:35.108  INFO 17276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 16:05:35.234  INFO 17276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 16:05:35.235  INFO 17276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1901 ms
+2023-03-15 16:05:35.654  INFO 17276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 16:05:35.762  INFO 17276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 16:05:35.974  INFO 17276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 16:05:36.101  INFO 17276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 16:05:36.105  WARN 17276 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 16:05:36.262  INFO 17276 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 16:05:36.273  INFO 17276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 16:05:36.293  INFO 17276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 16:05:37.198  INFO 17276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 16:05:37.211  INFO 17276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:05:37.838  WARN 17276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 16:05:38.715  INFO 17276 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-15 16:05:38.814  INFO 17276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 16:05:38.832  INFO 17276 --- [main] bank.Application                         : Started Application in 6.437 seconds (JVM running for 7.461)
+2023-03-15 16:05:38.936  INFO 17276 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 1263862 , customerName= Frank Brown
+2023-03-15 16:05:38.963  INFO 17276 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 4253892 , customerName= John Doe
+2023-03-15 16:05:39.007  INFO 17276 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 240.0
+2023-03-15 16:05:39.035  INFO 17276 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 529.0
+2023-03-15 16:05:39.060  INFO 17276 --- [main] bank.service.AccountService              : withdrawEuros with parameters accountNumber= 1263862 , amount= 230.0
+2023-03-15 16:05:39.074  INFO 17276 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 4253892 , amount= 1240.0
+2023-03-15 16:05:39.085  INFO 17276 --- [main] bank.service.AccountService              : depositEuros with parameters accountNumber= 4253892 , amount= 12000.0
+2023-03-15 16:05:39.321  INFO 17276 --- [main] BankLogger                               : JMS Logging Deposit of  12000.0 euros to account with accountNumber= 4253892 made
+2023-03-15 16:05:39.342  INFO 17276 --- [main] bank.service.AccountService              : transferFunds with parameters fromAccountNumber= 4253892 , toAccountNumber= 1263862 , amount= 100.0 , description= payment of invoice 10232
+2023-03-15 16:05:39.646  INFO 17276 --- [RMI TCP Connection(2)-10.10.61.202] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 16:05:39.646  INFO 17276 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 16:05:39.648  INFO 17276 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-15 16:05:45.185  INFO 17276 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:05:45.188  INFO 17276 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:05:45.193  INFO 17276 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 16:05:58.905  INFO 14060 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 14060 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 16:05:58.909  INFO 14060 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 16:06:00.154  INFO 14060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 16:06:00.231  INFO 14060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2023-03-15 16:06:01.011  INFO 14060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 16:06:01.022  INFO 14060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 16:06:01.022  INFO 14060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 16:06:01.140  INFO 14060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 16:06:01.141  INFO 14060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1964 ms
+2023-03-15 16:06:01.547  INFO 14060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 16:06:01.625  INFO 14060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 16:06:01.776  INFO 14060 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 16:06:01.891  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 16:06:01.896  WARN 14060 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 16:06:02.052  INFO 14060 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 16:06:02.065  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 16:06:02.080  INFO 14060 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 16:06:02.790  INFO 14060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 16:06:02.799  INFO 14060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:06:03.420  WARN 14060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 16:06:04.282  INFO 14060 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-15 16:06:04.386  INFO 14060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 16:06:04.405  INFO 14060 --- [main] bank.Application                         : Started Application in 6.008 seconds (JVM running for 7.045)
+2023-03-15 16:06:04.570  INFO 14060 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 1263862 , customerName= Frank Brown
+2023-03-15 16:06:04.596  INFO 14060 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 4253892 , customerName= John Doe
+2023-03-15 16:06:04.641  INFO 14060 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 240.0
+2023-03-15 16:06:04.668  INFO 14060 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 529.0
+2023-03-15 16:06:04.687  INFO 14060 --- [main] bank.service.AccountService              : withdrawEuros with parameters accountNumber= 1263862 , amount= 230.0
+2023-03-15 16:06:04.698  INFO 14060 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 4253892 , amount= 1240.0
+2023-03-15 16:06:04.707  INFO 14060 --- [main] bank.service.AccountService              : depositEuros with parameters accountNumber= 4253892 , amount= 12000.0
+2023-03-15 16:06:04.924  INFO 14060 --- [main] BankLogger                               : JMS Logging Deposit of  12000.0 euros to account with accountNumber= 4253892 made
+2023-03-15 16:06:04.943  INFO 14060 --- [main] bank.service.AccountService              : transferFunds with parameters fromAccountNumber= 4253892 , toAccountNumber= 1263862 , amount= 100.0 , description= payment of invoice 10232
+2023-03-15 16:06:05.224  INFO 14060 --- [RMI TCP Connection(2)-10.10.61.202] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 16:06:05.225  INFO 14060 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 16:06:05.227  INFO 14060 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-15 16:06:17.312  INFO 14060 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:06:17.315  INFO 14060 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:06:17.320  INFO 14060 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 16:21:21.131  INFO 14700 --- [main] bank.Application                         : Starting Application using Java 19.0.2 on CS544-202303-37 with PID 14700 (C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13\Lab12 Part B\target\classes started by 615216 in C:\Users\615216\Desktop\Karna Labs Enterprise Architecture\Lab 13)
+2023-03-15 16:21:21.135  INFO 14700 --- [main] bank.Application                         : No active profile set, falling back to default profiles: default
+2023-03-15 16:21:22.597  INFO 14700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 16:21:22.704  INFO 14700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2023-03-15 16:21:23.588  INFO 14700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 16:21:23.603  INFO 14700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 16:21:23.603  INFO 14700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2023-03-15 16:21:23.756  INFO 14700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 16:21:23.757  INFO 14700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2264 ms
+2023-03-15 16:21:24.216  INFO 14700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 16:21:24.320  INFO 14700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-15 16:21:24.573  INFO 14700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 16:21:24.715  INFO 14700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 16:21:24.720  WARN 14700 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 16:21:24.906  INFO 14700 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 16:21:24.919  INFO 14700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 16:21:24.939  INFO 14700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 16:21:25.776  INFO 14700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 16:21:25.787  INFO 14700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:21:26.403  WARN 14700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 16:21:27.313  INFO 14700 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-15 16:21:27.420  INFO 14700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 16:21:27.438  INFO 14700 --- [main] bank.Application                         : Started Application in 6.875 seconds (JVM running for 8.366)
+2023-03-15 16:21:27.545  INFO 14700 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 1263862 , customerName= Frank Brown
+2023-03-15 16:21:27.571  INFO 14700 --- [main] bank.service.AccountService              : createAccount with parameters accountNumber= 4253892 , customerName= John Doe
+2023-03-15 16:21:27.610  INFO 14700 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 240.0
+2023-03-15 16:21:27.639  INFO 14700 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 1263862 , amount= 529.0
+2023-03-15 16:21:27.662  INFO 14700 --- [main] bank.service.AccountService              : withdrawEuros with parameters accountNumber= 1263862 , amount= 230.0
+2023-03-15 16:21:27.672  INFO 14700 --- [main] bank.service.AccountService              : deposit with parameters accountNumber= 4253892 , amount= 1240.0
+2023-03-15 16:21:27.681  INFO 14700 --- [main] bank.service.AccountService              : depositEuros with parameters accountNumber= 4253892 , amount= 12000.0
+2023-03-15 16:21:27.914  INFO 14700 --- [main] BankLogger                               : JMS Logging Deposit of  12000.0 euros to account with accountNumber= 4253892 made
+2023-03-15 16:21:27.931  INFO 14700 --- [main] bank.service.AccountService              : transferFunds with parameters fromAccountNumber= 4253892 , toAccountNumber= 1263862 , amount= 100.0 , description= payment of invoice 10232
+2023-03-15 16:21:28.095  INFO 14700 --- [RMI TCP Connection(2)-10.10.61.202] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 16:21:28.096  INFO 14700 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 16:21:28.097  INFO 14700 --- [RMI TCP Connection(2)-10.10.61.202] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-15 16:21:32.362  INFO 14700 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:21:32.364  INFO 14700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:21:32.368  INFO 14700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
